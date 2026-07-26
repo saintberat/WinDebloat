@@ -21,16 +21,6 @@ Tamamen **PowerShell + Windows Forms (GUI)** kullanılarak geliştirilmiştir.
 
 ---
 
-## 📸 Arayüz
-
-> Buraya uygulamanın ekran görüntüsünü ekleyebilirsiniz.
-
-```
-images/screenshot.png
-```
-
----
-
 ## 📦 Desteklenen Sistemler
 
 - Windows 10
@@ -42,27 +32,11 @@ PowerShell 5.1 ve üzeri önerilir.
 
 ## 🚀 Kullanım
 
-### 1. Depoyu klonlayın
+### 1. .exe dosyasını indirin.
 
-```bash
-git clone https://github.com/KULLANICI_ADINIZ/windows-debloater.git
-```
+### 2. .exe dosyasını çalıştırın.
 
-veya ZIP olarak indirin.
-
----
-
-### 2. PowerShell'i Yönetici olarak çalıştırın
-
-Script yönetici yetkisi gerektirir.
-
----
-
-### 3. Çalıştırın
-
-```powershell
-.\WindowsDebloater.ps1
-```
+Uygulama yönetici yetkisi gerektirir.
 
 ---
 
@@ -117,7 +91,7 @@ Grup İlkesi kayıt defterini kullanarak Cortana'yı devre dışı bırakır.
 
 ### ♻️ Sistem Geri Yükleme
 
-İşlem yapmadan önce manuel olarak bir Sistem Geri Yükleme Noktası oluşturabilirsiniz.
+İşlem yapmadan önce uygulama üzerinden otomatik olarak bir Sistem Geri Yükleme Noktası oluşturabilirsiniz.
 
 ---
 
@@ -128,21 +102,8 @@ Bu araç sistem ayarlarını değiştirir.
 Kullanmadan önce:
 
 - Önemli dosyalarınızı yedeklemeniz önerilir.
-- Mümkünse önce Sistem Geri Yükleme Noktası oluşturun.
+- Kullanmadan önce geri yükleme noktası oluşturmanız önerilir.
 - Bazı değişikliklerin etkili olması için bilgisayarınızı yeniden başlatmanız gerekebilir.
-
----
-
-## 📁 Proje Yapısı
-
-```
-WindowsDebloater/
-│
-├── WindowsDebloater.ps1
-├── README.md
-└── images/
-    └── screenshot.png
-```
 
 ---
 
@@ -164,8 +125,6 @@ MIT License
 ---
 
 ## Katkıda Bulunma
-
-Pull Request'ler her zaman memnuniyetle karşılanır.
 
 Önerileriniz veya hata bildirimleriniz için Issue oluşturabilirsiniz.
 
