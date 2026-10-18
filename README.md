@@ -1,137 +1,120 @@
 # 🛠️ Windows Debloater
 
-Modern ve kullanımı kolay bir **Windows 10/11 Debloater** uygulaması.
+A modern, lightweight, and user-friendly **Windows 10/11 Debloater** application.
 
-Windows ile birlikte gelen gereksiz uygulamaları kaldırabilir, telemetriyi devre dışı bırakabilir, Cortana'yı kapatabilir ve isteğe bağlı olarak OneDrive'ı sistemden kaldırabilirsiniz.
+Easily remove pre-installed bloatware, disable telemetry and background data collection, disable Cortana, and optionally uninstall OneDrive from your system.
 
-Tamamen **PowerShell + Windows Forms (GUI)** kullanılarak geliştirilmiştir.
-
----
-
-## ✨ Özellikler
-
-- 🗑️ Gereksiz Windows uygulamalarını (Bloatware) kaldırır
-- 🔒 Windows Telemetri ve Veri Toplama servislerini devre dışı bırakır
-- 🎤 Cortana'yı devre dışı bırakır
-- ☁️ OneDrive'ı sistemden kaldırabilir
-- ♻️ Sistem Geri Yükleme Noktası oluşturabilir
-- 📋 Gerçek zamanlı işlem günlüğü (Log)
-- 🖥️ Basit ve kullanıcı dostu grafik arayüz
-- ⚡ Yönetici yetkisi kontrolü
+Built using **PowerShell + Windows Forms (GUI)**.
 
 ---
 
-## 📦 Desteklenen Sistemler
+## ✨ Features
 
-- Windows 10
-- Windows 11
-
-PowerShell 5.1 ve üzeri önerilir.
-
----
-
-## 🚀 Kullanım
-
-### 1. .exe dosyasını indirin.
-
-### 2. .exe dosyasını çalıştırın.
-
-Uygulama yönetici yetkisi gerektirir.
+- 🗑️ **Remove Windows Bloatware:** Safely uninstall unnecessary pre-installed consumer apps.
+- 🔒 **Disable Telemetry:** Turn off background tracking and telemetry services (`DiagTrack`, `dmwappushservice`).
+- 🎤 **Disable Cortana:** Disable Cortana completely via Group Policy registry configurations.
+- ☁️ **Remove OneDrive:** Cleanly stop and uninstall OneDrive on demand.
+- ♻️ **System Restore Integration:** Create a fresh System Restore Point directly from the app before making changes.
+- 📋 **Real-Time Logs:** Live execution status and feedback log viewer in the GUI.
+- 🖥️ **Intuitive UI:** Clean and responsive desktop interface.
+- ⚡ **Privilege Validation:** Built-in Administrator privilege checks.
 
 ---
 
-## Yapabilecekleri
+## 📦 Supported Systems
 
-### 🗑️ Bloatware Kaldırma
+- **Windows 10** (64-bit)
+- **Windows 11** (64-bit)
+- *PowerShell 5.1 or newer recommended.*
 
-Aşağıdaki gibi önceden yüklenmiş birçok Microsoft uygulamasını kaldırır:
+---
+
+## 🚀 Usage
+
+1. **Download** the latest `Debloater.exe` from the repository or releases.
+2. **Run as Administrator:** Right-click and choose **Run as administrator** (system modifications require elevated privileges).
+3. Select the optimization tasks you wish to perform and click execute.
+
+---
+
+## 🔍 Capabilities
+
+### 🗑️ Bloatware Removal
+
+Removes pre-installed UWP/AppX packages, including:
 
 - 3D Builder
-- Bing Finance
-- Bing News
-- Bing Sports
-- Bing Weather
-- Office Hub
-- OneNote
+- Bing Finance, News, Sports & Weather
+- Office Hub & OneNote
 - Skype
-- Windows Maps
-- Windows Alarms
+- Windows Maps & Alarms
 - Feedback Hub
-- Xbox uygulamaları
-- Groove Music
-- Movies & TV
-- ve diğer gereksiz uygulamalar
+- Xbox applications
+- Groove Music, Movies & TV
+- And other non-essential consumer packages
 
 ---
 
-### 🔒 Telemetri
+### 🔒 Telemetry & Diagnostics
 
-Aşağıdaki işlemleri gerçekleştirir:
+Applies the following optimizations:
 
-- AllowTelemetry değerini kapatır
-- DiagTrack servisini devre dışı bırakır
-- dmwappushservice servisini kapatır
+- Sets `AllowTelemetry` policy to disabled (`0`).
+- Stops and disables the `DiagTrack` (Connected User Experiences and Telemetry) service.
+- Stops and disables the `dmwappushservice` service.
 
 ---
 
 ### 🎤 Cortana
 
-Grup İlkesi kayıt defterini kullanarak Cortana'yı devre dışı bırakır.
+Disables Cortana by setting the `AllowCortana` registry key under `HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search`.
 
 ---
 
 ### ☁️ OneDrive
 
-İsteğe bağlı olarak:
-
-- OneDrive işlemini durdurur
-- Resmi OneDrive kaldırıcısını çalıştırır
+- Terminates active `OneDrive.exe` processes.
+- Executes the official OneDrive uninstaller silently and cleans up residue folders.
 
 ---
 
-### ♻️ Sistem Geri Yükleme
+### ♻️ System Restore
 
-İşlem yapmadan önce uygulama üzerinden otomatik olarak bir Sistem Geri Yükleme Noktası oluşturabilirsiniz.
-
----
-
-## ⚠️ Uyarılar
-
-Bu araç sistem ayarlarını değiştirir.
-
-Kullanmadan önce:
-
-- Önemli dosyalarınızı yedeklemeniz önerilir.
-- Kullanmadan önce geri yükleme noktası oluşturmanız önerilir.
-- Bazı değişikliklerin etkili olması için bilgisayarınızı yeniden başlatmanız gerekebilir.
+Enables you to create an automatic System Restore Point with a single click before initiating any debloating process.
 
 ---
 
-## 🛠️ Teknolojiler
+## ⚠️ Important Notes & Recommendations
 
-- PowerShell
-- Windows Forms
-- Windows Registry
-- Appx Package API
+This tool modifies system settings and removes applications:
 
----
-
-## Lisans
-
-MIT License
-
-İstediğiniz gibi kullanabilir, geliştirebilir ve katkıda bulunabilirsiniz.
+- It is strongly recommended to **create a System Restore Point** before running optimizations.
+- Back up critical work and personal files.
+- Some changes will only take full effect after a **system reboot**.
 
 ---
 
-## Katkıda Bulunma
+## 🛠️ Tech Stack
 
-Önerileriniz veya hata bildirimleriniz için Issue oluşturabilirsiniz.
+- **PowerShell**
+- **Windows Forms (.NET Framework)**
+- **Windows Registry APIs**
+- **AppX / Dism Package Management APIs**
 
 ---
 
-## ⭐ Destek
+## 📄 License
 
-Projeyi faydalı bulduysanız bir ⭐ bırakmayı unutmayın.
+Distributed under the **MIT License**. Free for personal and educational use.
 
-Bu hem projeye destek olur hem de GitHub algoritmasının "bak burada işe yarar bir şey var" diye uyanmasına yardımcı olur.
+---
+
+## 🤝 Contributing
+
+Contributions, bug reports, and feature suggestions are welcome! Feel free to open an **Issue** or submit a **Pull Request**.
+
+---
+
+## ⭐ Support
+
+If you found this tool useful, consider giving the repository a **Star** (⭐)!
