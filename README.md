@@ -1,5 +1,8 @@
 # 🛠️ Windows Debloater
 
+[![Release](https://img.shields.io/github/v/release/saintberat/WinDebloat?color=blue&label=Latest%20Release)](https://github.com/saintberat/WinDebloat/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A modern, lightweight, and user-friendly **Windows 10/11 Debloater** application.
 
 Easily remove pre-installed bloatware, disable telemetry and background data collection, disable Cortana, and optionally uninstall OneDrive from your system.
@@ -31,7 +34,7 @@ Built using **PowerShell + Windows Forms (GUI)**.
 
 ## 🚀 Usage
 
-1. **Download** the latest `Debloater.exe` from the repository or releases.
+1. **Download** the latest [**`Debloater.exe`**](https://github.com/saintberat/WinDebloat/releases/latest/download/Debloater.exe) from the [Releases](https://github.com/saintberat/WinDebloat/releases/latest) page.
 2. **Run as Administrator:** Right-click and choose **Run as administrator** (system modifications require elevated privileges).
 3. Select the optimization tasks you wish to perform and click execute.
 

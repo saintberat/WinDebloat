@@ -1,0 +1,12 @@
+# Binaries and executables
+*.exe
+*.dll
+
+# Logs
+*.log
+
+# Windows temporary files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
