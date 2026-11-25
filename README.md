@@ -122,4 +122,4 @@ Contributions, bug reports, and feature suggestions are welcome! Feel free to op
 
 If you found this tool useful, consider giving the repository a **Star** (⭐)!
 
-<!-- sync-activity: 2026-11-25T17:04:58Z (1eacb449) -->
+<!-- sync-activity: 2026-11-25T17:05:18Z (c3a35796) -->
